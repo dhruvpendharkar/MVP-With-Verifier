@@ -115,7 +115,7 @@ We provide four main evaluation scripts for different model configurations:
 If you find our work useful, please cite our paper:
 
 ```bibtex
-@article{mvp2024,
+@article{mvp2025,
   title={MVP: Multiple View Prediction Improves GUI Grounding},
   author={Yunzhu Zhang, Zeyu Pan, Zhengwen Zeng, Shuheng Shen, Changhua Meng and Linchao Zhu},
   journal={arXiv preprint},
