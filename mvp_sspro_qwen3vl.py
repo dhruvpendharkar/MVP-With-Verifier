@@ -775,7 +775,7 @@ def main():
         model_path,
         config=config,
         torch_dtype=torch.bfloat16,
-        attn_implementation="flash_attention_2",
+        attn_implementation="eager",
         device_map=f"cuda:{gpu}"
     )
 
