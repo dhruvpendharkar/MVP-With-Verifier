@@ -328,7 +328,7 @@ def process_single_subimage(subimage, instruction, processor, model, device, off
     return (final_x, final_y), output_text
 
 def are_coordinates_consistent(coord1, coord2, threshold=5):
-    """检查两个坐标是否一致（横纵坐标差都小于阈值）"""
+    """Check if two coordinates are consistent (both x and y differences are less than the threshold)"""
     x1, y1 = coord1
     x2, y2 = coord2
     return abs(x1 - x2) <= threshold and abs(y1 - y2) <= threshold
