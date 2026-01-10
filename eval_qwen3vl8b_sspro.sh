@@ -7,7 +7,7 @@ export ATTN_LAYER=24
 export TARGET_TOKEN_ID=","
 export MAX_INFERENCES=2
 export BATCH_SIZE=1
-export MODEL_PATH="/models/Qwen3-VL-8B-Instruct"
+export MODEL_PATH="Qwen/Qwen3-VL-8B-Instruct"
 
 # Dataset paths
 export SCREENSPOT_PRO_BASE_DIR="/data/screenspot-pro"  
