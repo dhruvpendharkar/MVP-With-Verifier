@@ -10,7 +10,7 @@ export BATCH_SIZE=1
 export MODEL_PATH="Qwen/Qwen3-VL-8B-Instruct"
 
 # Dataset paths
-export SCREENSPOT_PRO_BASE_DIR="/data/screenspot-pro"  
+export SCREENSPOT_PRO_BASE_DIR="./data/screenspot-pro"  
 
 # Install dependencies
 pip install transformers==4.57.1
