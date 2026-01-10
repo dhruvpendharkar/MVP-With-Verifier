@@ -1,6 +1,8 @@
 #!/bin/bash
 
 # Global configuration variables
+export TORCH_SHOW_CPP_STACKTRACES=1
+export TORCHELASTIC_ERROR_FILE=error.log
 export ATTN_LAYER=24
 export TARGET_TOKEN_ID=","
 export MAX_INFERENCES=2
