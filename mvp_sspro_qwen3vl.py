@@ -739,7 +739,8 @@ def calculate_detailed_statistics(results):
 
 def main():
     # 设置分布式
-    cleanuop_distributed()
+    cleanup_distributed()
+    torch.cuda.memory.empty_cache()
     rank, world_size, gpu = setup_distributed()
     
     # 解析命令行参数
