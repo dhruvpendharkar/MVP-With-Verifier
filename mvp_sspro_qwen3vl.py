@@ -739,6 +739,7 @@ def calculate_detailed_statistics(results):
 
 def main():
     # 设置分布式
+    cleanuop_distributed()
     rank, world_size, gpu = setup_distributed()
     
     # 解析命令行参数
