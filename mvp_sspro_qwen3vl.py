@@ -775,9 +775,8 @@ def main():
         model_path,
         config=config,
         torch_dtype=torch.bfloat16,
-        attn_implementation="eager",
-        device_map=f"cuda:{gpu}"
-    )
+        attn_implementation="eager"
+    ).to(f"cuda:{gpu}")
 
     
     # 将模型移动到当前GPU并包装为DDP
