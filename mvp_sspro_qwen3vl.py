@@ -756,6 +756,7 @@ def main():
     # 只在主进程打印信息
     if rank == 0:
         print(f"Using {world_size} GPUs")
+        print(int(os.environ['LOCAL_RANK']))
         print(f"Batch size per GPU: {args.batch_size}")
         print(f"Attention layer for region selection: {args.attn_layer}")
         print(f"Target token id for region selection: {args.target_token_id}")
@@ -776,7 +777,7 @@ def main():
         config=config,
         torch_dtype=torch.bfloat16,
         attn_implementation="eager",
-        device_map=f"cuda:{gpu}"
+        device_map="auto"
     )
 
     

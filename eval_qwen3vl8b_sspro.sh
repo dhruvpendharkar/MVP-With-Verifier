@@ -19,7 +19,7 @@ pip install transformers==4.57.1
 
 # Run ScreenSpot-Pro experiment
 echo "Running ScreenSpot-Pro..."
-torchrun --nproc_per_node=1 mvp_sspro_qwen3vl.py \
+torchrun --nproc_per_node=2 mvp_sspro_qwen3vl.py \
     --attn_layer $ATTN_LAYER \
     --target_token_id "$TARGET_TOKEN_ID" \
     --max_inferences $MAX_INFERENCES \
